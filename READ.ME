@@ -1,0 +1,60 @@
+
+
+Project Overview
+
+The College Admission System is a web application built with Flask that manages student registrations for college admissions.
+ It provides a simple interface for students to submit their applications and for administrators to review, approve, or reject
+  these applications.
+
+Key Features:
+Student registration form with validation
+PDF receipt generation for student applications
+ Admin dashboard to view all applications
+Application approval/rejection functionality
+User-friendly interface with Bootstrap styling
+
+Installation Instructions
+
+
+Create and activate a virtual environment**
+
+On Windows
+   python -m venv venv
+   venv\Scripts\activate
+
+ On macOS/Linux
+   python -m venv venv
+   source venv/bin/activate
+   ```
+
+Install dependencies
+   
+   pip install -r requirements.txt
+   ```
+
+Run the application
+   
+   python app.py
+   ```
+
+Access the application
+   - Open your web browser and navigate to `http://127.0.0.1:5000`
+   - For admin access, go to `http://127.0.0.1:5000/admin/login`
+
+
+   Admin login details:
+   username: admin 
+   password:admin123
+
+
+TESTING: Currently, the focus is on manual testing. Please verify the following functionality:
+- Student registration with validation
+- PDF generation
+- Admin login security
+- Application approval/rejection process
+
+ Technology Stack
+
+Backend: Flask (Python web framework)
+Database: SQLite with SQLAlchemy ORM
+Frontend: - HTML/CSS

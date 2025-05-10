@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Success</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Registration Successful!</h1>
+        </header>
+        
+        <main>
+            <div class="card success-card">
+                <div class="success-icon">✓</div>
+                <h2>Thank you for your application!</h2>
+                <p>Your registration has been submitted successfully.</p>
+                <p>Application ID: <strong>{{ student_id }}</strong></p>
+                <p>Please keep the downloaded PDF for your records.</p>
+                <p>We will review your application and notify you via email about the status.</p>
+                
+                <div class="button-group">
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary">Back to Home</a>
+                    <a href="{{ url_for('download_pdf', filename=pdf_filename) }}" class="btn btn-primary">Download PDF Again</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>For any queries, please contact our admission office.</p>
+        </footer>
+    </div>
+</body>
+</html>
